@@ -47,6 +47,14 @@ So to Optimize both TNS and WNS the drive Strength of CLK BUFFERS was increased 
 
 The Changes made in the CONFIG File is shown below using "diff" command:
 
+![difference config](https://user-images.githubusercontent.com/129440945/229107866-7efa0eed-3251-408b-a1fe-439495bc25af.png)
+
+The main reason for upsizing the Clock Buffers was to reduce the cell delay and latency in clock propagation using which reduces skew and inturn reduces the uncertainity leading to better Setup and Hold Optimization.
+
+CTS_BUFF_DISTANCE was reduced because adding buffers at regular interval reduces the risk of minimum pulse width violation and Optimizes the transition violations in the design.
+
+
+
 
 
 
