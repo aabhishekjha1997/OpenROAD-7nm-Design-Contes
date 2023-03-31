@@ -79,6 +79,7 @@ CTS_BUFF_DISTANCE was reduced because adding buffers at regular interval reduces
 
 ![slack value ](https://user-images.githubusercontent.com/129440945/229111615-385ec8dd-fdc4-4d5f-b2a6-482d3048180c.png)
 
+However due to Upsizing there will be trade off between Power and Timing of the Design. Due to upsizing from "4" to "24" there will be significant increase in Dynamic Power Dissipation. 
 
 
 
