@@ -33,3 +33,20 @@ In RC Extraction the tool tries to extract the actual net delays which are necce
 Comming to the problem Statement the design selected was "ibex" using asap7 PDK, the main agenda of which I worked on was to meet the timing of the design and tried to Optimize the WNS and TNS.
 
 Before reaching to the final result multiple iteration were to optmize the timing using the following commands:
+
+repair_design -max_wire_length max_length
+repair_design -slew_margin slew_margin
+
+repair_timing -setup
+repair_timing  -hold
+repair_timing -repair_tns tns_end_percent
+
+Using the following commands in detail_place.tcl and detail_route.tcl significantly increase the run time of ORFS without optimizing the WNS.
+
+So to Optimize both TNS and WNS the drive Strength of CLK BUFFERS was increased from 4 to 24 and CTS_BUFF_DISTANCE was changed from 60 to 35.
+
+The Changes made in the CONFIG File is shown below using "diff" command:
+
+
+
+
