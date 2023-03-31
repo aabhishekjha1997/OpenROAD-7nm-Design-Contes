@@ -50,9 +50,9 @@ In RC Extraction the tool tries to extract the actual net delays which are necce
 ![gui_final ](https://user-images.githubusercontent.com/129440945/229122401-ac327463-a84b-4341-b8cf-af9c51944083.png)
 Fig (VI) GUI after RC Extraction and Post Route Optmization. (ibex/asap7)
 
+# Problem Statement:(OpenROAD 7nm Contest)
 
-# Problem Statement:
-Comming to the problem Statement the design selected was "ibex" using asap7 PDK, the main agenda of which I worked on was to meet the timing of the design and tried to Optimize the WNS and TNS.
+Coming to the problem Statement,the design selected was "ibex" using asap7 PDK. The main agenda of which I worked on was to meet the timing of the design and tried to Optimize the WNS and TNS.
 
 Before reaching to the final result multiple iteration were to optmize the timing using the following commands:
 
@@ -71,7 +71,6 @@ The Changes made in the CONFIG File is shown below using "diff" command:
 
 ![difference config](https://user-images.githubusercontent.com/129440945/229107866-7efa0eed-3251-408b-a1fe-439495bc25af.png)
 Fig(VII) Changes made in original config.mk file 
-
 The main reason for upsizing the Clock Buffers was to reduce the cell delay and latency in clock propagation using which reduces skew and inturn reduces the uncertainity leading to better Setup and Hold Optimization.
 
 CTS_BUFF_DISTANCE was reduced because adding buffers at regular interval reduces the risk of minimum pulse width violation and Optimizes the transition violations in the design.
