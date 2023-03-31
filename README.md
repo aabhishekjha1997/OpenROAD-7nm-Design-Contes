@@ -84,6 +84,7 @@ However due to Upsizing there will be trade off between Power and Timing of the 
 
 Path to log Directory:
 /home/abhjha1997/abhishekORFS/OpenROAD-flow-scripts/flow/logs/asap7/ibex/base/
+
 As I was not able to commit changes to the forked to ORFS even adding ssh key.
 
 
